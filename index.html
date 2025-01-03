@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoyageVerse</title>
+    <link rel="icon" href="airplane.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+        </ul>
+        <ul>
+            <li class="Title1"><a href="index.html"><b>VoyageVerse</b></a></li>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="explore.html">Explore</a></li>
+            <li class="hideOnMobile"><a href="gallery.html">Gallery</a></li>
+            <li class="hideOnMobile"><a href="About Us.html">About Us</a></li>
+            <li class="hideOnMobile"><a href="Contact Us.html">Contact Us</a></li>
+            <li id="signup"><a href="user.html"><i class="fas fa-user" style="font-size: 24px; color: white;"></i></a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <section class="home">
+        <video class="video-slide active" src="1" autoplay muted loop></video>
+        <video class="video-slide" src="2" autoplay muted loop></video>
+        <video class="video-slide" src="3" autoplay muted loop></video>
+        <video class="video-slide" src="4" autoplay muted loop></video>
+        <video class="video-slide" src="5" autoplay muted loop></video>
+        <div class="content active">
+            <h1>Wonderful.<br><span>Island</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit rerum amet illum molestias exercitationem non magnam incidunt perferendis sapiente reiciendis in, error rem hic molestiae, ut alias corrupti tempora iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deserunt ad harum minus, ut delectus fuga iusto saepe magni eos ullam obcaecati officia aperiam unde libero voluptatum neque culpa quibusdam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat deserunt iste incidunt itaque quo. Porro autem iure reprehenderit sit error incidunt vero maxime. Quis facilis, eligendi voluptates impedit expedita minus.</p>
+            <a href="explore.html">Explore Now</a>
+        </div>
+        <div class="content">
+            <h1>Camping.<br><span>Enjoy</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit rerum amet illum molestias exercitationem non magnam incidunt perferendis sapiente reiciendis in, error rem hic molestiae, ut alias corrupti tempora iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deserunt ad harum minus, ut delectus fuga iusto saepe magni eos ullam obcaecati officia aperiam unde libero voluptatum neque culpa quibusdam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat deserunt iste incidunt itaque quo. Porro autem iure reprehenderit sit error incidunt vero maxime. Quis facilis, eligendi voluptates impedit expedita minus.</p>
+            <a href="explore.html">Explore Now</a>
+        </div>
+        <div class="content">
+            <h1>Road Trip.<br><span>Together</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit rerum amet illum molestias exercitationem non magnam incidunt perferendis sapiente reiciendis in, error rem hic molestiae, ut alias corrupti tempora iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deserunt ad harum minus, ut delectus fuga iusto saepe magni eos ullam obcaecati officia aperiam unde libero voluptatum neque culpa quibusdam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat deserunt iste incidunt itaque quo. Porro autem iure reprehenderit sit error incidunt vero maxime. Quis facilis, eligendi voluptates impedit expedita minus.</p>
+            <a href="explore.html">Explore Now</a>
+        </div>
+        <div class="content">
+            <h1>Adventures.<br><span>Off Road</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit rerum amet illum molestias exercitationem non magnam incidunt perferendis sapiente reiciendis in, error rem hic molestiae, ut alias corrupti tempora iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deserunt ad harum minus, ut delectus fuga iusto saepe magni eos ullam obcaecati officia aperiam unde libero voluptatum neque culpa quibusdam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat deserunt iste incidunt itaque quo. Porro autem iure reprehenderit sit error incidunt vero maxime. Quis facilis, eligendi voluptates impedit expedita minus.</p>
+            <a href="explore.html">Explore Now</a>
+        </div>
+        <div class="content">
+            <h1>Feel Nature.<br><span>Relax</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit rerum amet illum molestias exercitationem non magnam incidunt perferendis sapiente reiciendis in, error rem hic molestiae, ut alias corrupti tempora iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deserunt ad harum minus, ut delectus fuga iusto saepe magni eos ullam obcaecati officia aperiam unde libero voluptatum neque culpa quibusdam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat deserunt iste incidunt itaque quo. Porro autem iure reprehenderit sit error incidunt vero maxime. Quis facilis, eligendi voluptates impedit expedita minus.</p>
+            <a href="explore.html">Explore Now</a>
+        </div>
+            <div class="media-icons">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"><ion-icon name="logo-facebook"></ion-icon></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="slider-navigation">
+                <div class="nav-btn active"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+            </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

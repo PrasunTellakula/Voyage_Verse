@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakes</title>
+    <link rel="icon" href="airplane.png">
+    <link rel="stylesheet" href="lakes.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</head>
+<body>
+    <div class="title-box">
+        <h1>LAKES</h1>
+    </div>
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="Search for an island...">
+        <button id="search-button">Search</button>
+    </div>
+    <p id="no-results-message" style="display: none; text-align: center; color: red; font-size: 18px;">No results found</p>
+    <div class="grid-container">
+        
+    </div>
+
+    <!-- Popup HTML -->
+    <div class="popup" id="popup" style="display: none;">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h3 id="popup-title"></h3>
+            <p id="popup-summary"></p>
+            <a id="popup-wikipedia-link" href="#" target="_blank" class="wikipedia-link" style="display: none;">For more info visit Wikipedia</a>
+
+            <div id="weather-widget" style="display: none; margin-top: 20px; text-align: center;">
+                <h4>Weather Forecast</h4>
+                <div id="weather-info">
+                    <p id="weather-description"></p>
+                    <img id="weather-icon" src="" alt="Weather Icon">
+                    <p id="temperature"></p>
+                    <div id="forecast-container"></div>
+                </div>
+            </div>
+            <div id="weather-unavailable-message" style="display: none;">
+                Weather forecast unavailable for this place.
+            </div>
+
+            <div id="map-widget" style="display: none; margin-top: 20px;">
+                <h4>Map View</h4>
+                <div id="map" style="height: 450px; width: 80%;"></div>
+            </div>
+            
+
+            <div id="currency-converter-widget" style="margin-top: 20px; text-align: center;">
+                <h4>Currency Converter</h4>
+                <select id="currency-from"></select>
+                <input type="number" id="amount" placeholder="Amount" />
+                <select id="currency-to"></select>
+                <button id="convert-button">Convert</button>
+                <p id="conversion-result" style="margin-top: 10px;"></p>
+            </div>
+
+            <p>Share your experiences by writing a review and uploading photos/videos:</p>
+            <textarea name="Review" placeholder="Write your review here..." id="review-input"></textarea>
+            <input type="file" id="file-input" accept="image/*,video/*" style="margin-top: 10px;">
+            <br>
+            <br>
+            <button id="submit-review">Submit Review</button>
+            <div id="review-feedback" style="margin-top: 10px; color: green;"></div>
+
+            <hr>
+            <h4>Reviews from other users:</h4>
+            <ul id="reviews-list" style="text-align: left;"></ul>
+        </div>
+    </div>
+
+    <script type="module" src="lakes.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link rel="icon" href="airplane.png">
+    <link rel="stylesheet" href="explore.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+      <nav>
+      <ul>
+        <li class="Title1"><a href="index.html"><b>VoyageVerse</b></a></li>
+        <li class="hideOnMobile"><a href="index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="explore.html">Explore</a></li>
+        <li class="hideOnMobile"><a href="gallery.html">Gallery</a></li>
+        <li class="hideOnMobile"><a href="random.html">Random</a></li>
+        <li class="hideOnMobile"><a href="About Us.html">About Us</a></li>
+        <li class="hideOnMobile"><a href="Contact Us.html">Contact Us</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="explore.html">Explore</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="random.html">Random</a></li>
+      <li><a href="About Us.html">About Us</a></li>
+      <li><a href="Contact Us.html">Contact Us</a></li>
+    </ul>
+    </nav>
+    <script>
+      function showSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+           sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+           sidebar.style.display = 'none'
+      }
+  </script>
+
+    <!-- slider -->
+
+    <div class="slider">
+        <!-- list Items -->
+        <div class="list">
+            <div class="item active">
+                <img src="image/img1.png">
+                <div class="content">
+                    <p>Explore</p>
+                    <h2>Islands</h2>
+                    <p>
+                      
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img2.jpg">
+                <div class="content">
+                    <p>Explore</p>
+                    <h2>Beaches</h2>
+                    <p>
+                      
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img3.jpg">
+                <div class="content">
+                    <p>Explore</p>
+                    <h2>Deserts</h2>
+                    <p>
+                  
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img4.jpg">
+                <div class="content">
+                    <p>Explore</p>
+                    <h2>Hills</h2>
+                    <p>
+                    
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img5.jpg">
+                <div class="content">
+                    <p>Explore</p>
+                    <h2>Forests</h2>
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img6.jpg">
+                <div class="content">
+                    <p>Explore</p>
+                    <h2>Religious Places</h2>
+                    <p>
+                       
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img7.jpg">
+                <div class="content">
+                    <p>Explore</p>
+                    <h2>Waterfalls</h2>
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img8.jpg">
+                <div class="content">
+                    <p>Explore</p>
+                    <h2>Lakes</h2>
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img9.jpg">
+                <div class="content">
+                    <p>Explore</p>
+                    <h2>Caves</h2>
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img10.jpg">
+                <div class="content">
+                    <p>Explore</p>
+                    <h2>Wildlife Sanctuaries</h2>
+                    <p>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img11.jpg">
+                <div class="content">
+                    <p>Explore</p>
+                    <h2>Historical Monuments</h2>
+                    <p>
+                       
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- button arrows -->
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- thumbnail -->
+        <div class="thumbnail">
+            <div class="item active">
+                <img src="image/img1.png">
+                <div class="content">
+                    Islands
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img2.jpg">
+                <div class="content">
+                    Beaches
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img3.jpg">
+                <div class="content">
+                    Deserts
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img4.jpg">
+                <div class="content">
+                    Hills
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img5.jpg">
+                <div class="content">
+                    Forests
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img6.jpg">
+                <div class="content">
+                  Religious Places
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img7.jpg">
+                <div class="content">
+                  Waterfalls
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img8.jpg">
+                <div class="content">
+                  Lakes
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img9.jpg">
+                <div class="content">
+                    Caves
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img10.jpg">
+                <div class="content">
+                  Wildlife Sanctuaries
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img11.jpg">
+                <div class="content">
+                  Historical Monuments
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="explore.js"></script>
+</body>
+</html>
